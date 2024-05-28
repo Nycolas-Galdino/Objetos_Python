@@ -26,10 +26,10 @@ class Email:
         self.__email__: EmailMessage = None
 
         # Configurações do servidor SMTP
-        self.smtp_host = 'insira seu serviço SMTP'
-        self.smtp_port = 587
-        self.sender = 'insira seu e-mail'
-        self.__password__ = 'insira sua senha'
+        self.smtp_host: str = 'insira seu serviço SMTP'
+        self.smtp_port: int = 587
+        self.sender: str = 'insira seu e-mail'
+        self.__password__: str = 'insira sua senha'
 
         self.bcc.append(self.sender)
         self.__attachments__: list = []
