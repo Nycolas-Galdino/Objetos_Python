@@ -12,12 +12,11 @@ init()
 
 
 class Email:
-    def __init__(self, title: str,) -> None:
+    def __init__(self, title: str) -> None:
         """Cria um objeto de um e-mail que poderá ser enviado futuramente
 
         Args:
             title (str): Insira o título do e-mail
-            subject (str): _description_
         """
         self.subject: str = title
         self.destination: list = []
@@ -27,10 +26,10 @@ class Email:
         self.__email__: EmailMessage = None
 
         # Configurações do servidor SMTP
-        self.smtp_host = 'smtp.office365.com'
+        self.smtp_host = 'insira seu serviço SMTP'
         self.smtp_port = 587
-        self.sender = 'automation@mg8.com.br'
-        self.__password__ = 'Faz06712'
+        self.sender = 'insira seu e-mail'
+        self.__password__ = 'insira sua senha'
 
         self.bcc.append(self.sender)
         self.__attachments__: list = []
